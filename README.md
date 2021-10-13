@@ -1,7 +1,7 @@
 # Neural Motion Learner
 
 ## Introduction
-This work is to extract skeletal structure from volumetric observations and to learn motion dynamics from the detected skeletal motions in fully unsupervised manner.
+This work is to extract skeletal structure from volumetric observations and to learn motion dynamics from the detected skeletal motions in a fully unsupervised manner.
 
 Our model conducts <strong>motion generation/interpolation/retargeting</strong> based on the learned latent dynamics.
 
@@ -10,7 +10,9 @@ Note that it is an <strong>unofficial version</strong> of the work so that minim
 Full descriptions including title, training codes and data pre-processing methods will be uploaded once the paper of this work is accepted to the conference.
 
 ## Install
-We tested on Python 3.8 with Ubuntu 18.04 LTS and Cuda 11.0.
+We tested on Python 3.8 and Ubuntu 18.04 LTS.
+
+The architecture is built from Pytorch 1.7.1 with Cuda 11.0.
 
 Creating a conda environment is recommended.
 
