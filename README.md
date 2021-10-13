@@ -1,7 +1,7 @@
 # Neural Motion Learner
 
 ## Introduction
-This work is to extract skeletal structure from volumetric observations and to learn motion dynamics from the skeletal motions in fully unsupervised manner.
+This work is to extract skeletal structure from volumetric observations and to learn motion dynamics from the detected skeletal motions in fully unsupervised manner.
 
 Our model conducts <strong>motion generation/interpolation/retargeting</strong> based on the learned latent dynamics.
 
