@@ -68,7 +68,7 @@ if __name__ == "__main__":
     network.anneal(1)  # to enable extracting affinity
 
     ###########################################################################################
-    filenames = ['data/source/gHO_sBM_cAll_d20_mHO1_ch05.npy']
+    filenames = ['data/demo/source/gHO_sBM_cAll_d20_mHO1_ch05.npy']
 
     vis = o3d.visualization.Visualizer()
     vis.create_window(width=1025, height=958, visible=False)
@@ -185,7 +185,7 @@ if __name__ == "__main__":
 
                 final_img = img.astype(np.uint8)
 
-                save_dir = 'output/interpolation/%s' % motion_name
+                save_dir = 'output/demo/interpolation/%s' % motion_name
                 if not os.path.exists(save_dir):
                     os.makedirs(save_dir)
 

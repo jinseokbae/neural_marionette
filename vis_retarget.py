@@ -182,7 +182,7 @@ if __name__ == "__main__":
         dict(
             source_start=0,
             sample_rate=1,
-            source_file='data/source/gHO_sBM_cAll_d20_mHO1_ch05.npy'
+            source_file='data/demo/source/gHO_sBM_cAll_d20_mHO1_ch05.npy'
         )
     )
 
@@ -190,10 +190,10 @@ if __name__ == "__main__":
     ##################################################################################################
 
     target_list = []
-    target_list.append('data/target/ninja')
+    target_list.append('data/demo/target/ninja')
 
     output_list = []
-    output_list.append('output/retarget/target/ninja')
+    output_list.append('output/demo/retarget/target/ninja')
 
     ##################################################################################################
     if arg.debug:

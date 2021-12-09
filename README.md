@@ -25,7 +25,26 @@ conda activate nmotion
 bash setup.sh
 ```
 
-## Run
+## Dataset
+We tested Neural Marionette with the various dataset.
+- [AIST++](https://github.com/google/aistplusplus_api)
+- [D-FAUST](https://dfaust.is.tue.mpg.de/)
+- [Animals](https://github.com/rabbityl/DeformingThings4D)
+- [Hands](https://lmb.informatik.uni-freiburg.de/resources/datasets/HanCo.en.html)
+- [Robot](https://github.com/CoppeliaRobotics/CoppeliaSimLib)
+
+Basically our model requires a raw point cloud sequence, which means no preprocessing is required.
+We provide train/test split information for AIST++, D-FAUST, Animals dataset on the ```dataset/```.
+
+## Training
+Once dataset is ready, you can train model according to pre-defined hyperparameters in ```dataset/config.py```.
+
+```shell
+## run training code
+python train.py
+```
+
+## Demo
 Using provided pretrained model, run demo codes to visualize followings:
 ```shell
 ## Motion generation
@@ -48,3 +67,16 @@ python vis_retarget.py
 ```
 ![Retarget Video](gifs/retarget_demo.gif)
 
+## Citation
+
+If our code is helpful for your research, please cite our paper:
+
+```
+@inproceedings{Bae2021NMARIO,
+  author = {Jinseok Bae, Hojun Jang, Cheol-Hui Min, Hyungun Choi, and Young Min Kim},
+  title = {Neural Marionette: Unsupervised Learning of Motion Skeleton and Latent Dynamics from Volumetric Video},
+  booktitle = {Proceedings of the 36th AAAI Conference on Artificial Intelligence (AAAI 2022)},
+  month = {February},
+  year = {2022}
+}
+```
