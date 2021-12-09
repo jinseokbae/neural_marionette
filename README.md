@@ -49,21 +49,21 @@ Using provided pretrained model, run demo codes to visualize followings:
 ```shell
 ## Motion generation
 python vis_generation.py
-## Result will be stored in output/generation
+## Result will be stored in output/demo/generation
 ```
 ![Gen Video](gifs/generation_demo.gif)
 
 ```shell
 ## Motion interpolation
 python vis_interpolation.py
-## Result will be stored in output/interpolation
+## Result will be stored in output/demo/interpolation
 ```
 ![Interp Video](gifs/interpolation_demo.gif)
 
 ```shell
 ## Motion retargeting
 python vis_retarget.py
-## Result will be stored in output/retarget
+## Result will be stored in output/demo/retarget
 ```
 ![Retarget Video](gifs/retarget_demo.gif)
 
