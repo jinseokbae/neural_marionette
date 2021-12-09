@@ -19,6 +19,18 @@ class NeuralMarionette(nn.Module):
         if nbatch is None: # anneal only once per epoch
             self.kypt_detector.anneal(nepoch)
 
+    def control_active(self, module_actives):
+        for module_name in self.current_actives.keys():
+            if self.current_actives[module_name] != module_actives[module_name]:
+                if module_name == 'detector':
+                    module = self.kypt_detector
+                elif module_name == 'learner':
+                    module = self.dyna_module
+                for child in module.modules():
+                    for param in child.parameters():
+                        param.requires_grad = module_actives[module_name]
+                self.current_actives[module_name] = module_actives[module_name]
+                
     def forward(self, vox_seq, module_actives=None):
         '''
         seq : # (B, T, N, C), cuda tensor

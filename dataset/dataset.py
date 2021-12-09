@@ -9,7 +9,7 @@ import torchvision.transforms as transforms
 import torch.utils.data as data
 import random
 import pickle
-from src.utils.dataset_utils import crop_sequence, episodic_normalization, voxelize
+from utils.dataset_utils import crop_sequence, episodic_normalization, voxelize
 
 class DFAUST(data.Dataset):
     def __init__(self, train=True, options=None):

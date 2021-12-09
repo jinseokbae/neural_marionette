@@ -41,7 +41,7 @@ Once dataset is ready, you can train model according to pre-defined hyperparamet
 
 ```shell
 ## run training code
-python train.py
+python train.py --exp_name 'experiment_name' --dataset 'aist'
 ```
 
 ## Demo
