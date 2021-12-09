@@ -72,7 +72,7 @@ python vis_retarget.py
 If our code is helpful for your research, please cite our paper:
 
 ```
-@inproceedings{Bae2021NMARIO,
+@inproceedings{Bae2022NMARIO,
   author = {Jinseok Bae, Hojun Jang, Cheol-Hui Min, Hyungun Choi, and Young Min Kim},
   title = {Neural Marionette: Unsupervised Learning of Motion Skeleton and Latent Dynamics from Volumetric Video},
   booktitle = {Proceedings of the 36th AAAI Conference on Artificial Intelligence (AAAI 2022)},
