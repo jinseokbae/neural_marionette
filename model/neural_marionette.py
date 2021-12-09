@@ -30,7 +30,7 @@ class NeuralMarionette(nn.Module):
                     for param in child.parameters():
                         param.requires_grad = module_actives[module_name]
                 self.current_actives[module_name] = module_actives[module_name]
-                
+
     def forward(self, vox_seq, module_actives=None):
         '''
         seq : # (B, T, N, C), cuda tensor

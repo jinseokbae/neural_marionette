@@ -1,0 +1,10 @@
+bear
+bucks
+bunny
+dino
+huskydog
+milkcow
+pig
+puma
+raccoon
+tiger
