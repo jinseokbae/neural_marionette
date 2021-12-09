@@ -16,11 +16,11 @@ Creating a conda environment is recommended.
 
 ```shell
 ## Download the repository
-git clone https://github.com/jinseokbae/neural_motion_learner.git
-cd neural_motion_learner
+git clone https://github.com/jinseokbae/neural_marionette.git
+cd neural_marionette
 ## Create conda env
-conda create --name nmotion python=3.8
-conda activate nmotion
+conda create --name nmario python=3.8
+conda activate nmario
 ## modify setup.sh to match your cuda setting
 bash setup.sh
 ```
