@@ -1,7 +1,8 @@
 # Neural Marionette
 
 ## Introduction
-This is an official pytorch code for the paper, Neural Marionette: Unsupervised Learning of Motion Skeleton and Latent Dynamics for Volumetric Video (AAAI 2022, Oral).[[arxiv]](https://arxiv.org/abs/2202.08418)
+This is an official pytorch code for the paper, Neural Marionette: Unsupervised Learning of Motion Skeleton and Latent Dynamics for Volumetric Video (AAAI 2022, Oral).
+[[paper]](https://arxiv.org/abs/2202.08418)
 
 This work is to extract skeletal structure from volumetric observations and to learn motion dynamics from the detected skeletal motions in a fully unsupervised manner.
 
